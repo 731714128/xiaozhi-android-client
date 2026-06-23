@@ -1,4 +1,4 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'dart:convert';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:web_socket_channel/status.dart' as status;
@@ -94,9 +94,9 @@ class XiaozhiWebSocketManager {
       try {
         // 创建headers
         Map<String, dynamic> headers = {
-          'device-id': _deviceId ?? '',
-          'client-id': _deviceId ?? '',
-          'protocol-version': '1',
+          'Device-Id': _deviceId ?? '',
+          'Client-Id': _deviceId ?? '',
+          'Protocol-Version': '1',
         };
 
         // 添加Authorization头，参考Java实现
